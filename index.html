@@ -1,13 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-    
+  <meta charset="UTF-8" />
+  <title>Love Programming Form</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    
+
+  <div class="container">
+    <h2>Programming Love Form</h2>
+
+    <form id="loveForm">
+      <label>
+        Name:
+        <input type="text" id="name" placeholder="Enter your name" required />
+      </label>
+
+      <div class="checkboxes">
+        <label>
+          <input type="checkbox" value="JavaScript" /> I love JavaScript
+        </label>
+
+        <label>
+          <input type="checkbox" value="Python" /> I love Python
+        </label>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <p id="output"></p>
+  </div>
+
+  <script src="index.js"></script>
 </body>
 </html>
